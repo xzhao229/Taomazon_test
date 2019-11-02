@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import App from '../App.css';
+// import App from '../App.css';
 
 export const ButtonContainer = styled.button`
 	/*directly write css inside*/
