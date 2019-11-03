@@ -2,7 +2,9 @@
   --mainBlue:#2a2a72;
   --lightBlue:#009ffd;
   --mainWhite:#f3f3f3;
+
   --mainDark:#232528;
+
   --mainYellow:#ffa400;
 }
 
@@ -14,9 +16,11 @@ body{
 
 .text-title{
   font-family: "Permanent Marker", cursive;
+
   /*other font options*/
   /*Verdana, Geneva, sans-serif*/
   /*Arial, Helvetica, sans-serif*/
+
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 

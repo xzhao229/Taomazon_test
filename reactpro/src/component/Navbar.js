@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../logo.svg';
+
 import styled from 'styled-components';
 import {ButtonContainer} from './Button';
 import App from '../App.css';
 
+
 export default class Navbar extends Component{
 	render(){
 		return(
+
 
 			<NavWrapper className = "navbar navbar-expand-sm navbar-dark px-sm-5">
 			{/* https://www.iconfinder.com/icons/1243689/call_phone_icon
@@ -50,3 +53,4 @@ const NavWrapper = styled.nav`
 		text-transform: capitalize;
 	}
 `
+
