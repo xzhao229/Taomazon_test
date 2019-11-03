@@ -58,3 +58,11 @@ body{
 .height-full {
   height: 100vh;
 }
+
+.noBullet {
+  list-style-type: none;
+  text-align: left;
+  margin-left: 160px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 14px;
+}
