@@ -8,6 +8,7 @@ import Details from './component/Details';
 import Cart from './component/Cart';  //not /Cart/Cart due to package.json
 import Default from './component/Default';
 import Modal from './component/Modal';
+import Footer from './component/Footer';
 
 
 class App extends Component{
@@ -23,6 +24,7 @@ class App extends Component{
         </Switch>
 
         <Modal />
+        <Footer />         
 
       </React.Fragment>
     );
