@@ -59,10 +59,11 @@ body{
   height: 100vh;
 }
 
-.noBullet {
+.footerBullets {
   list-style-type: none;
   text-align: left;
-  margin-left: 160px;
+  /*margin-left: 150px;*/
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 14px;
+  color: var(--mainWhite);
 }
