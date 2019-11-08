@@ -15,14 +15,18 @@ class App extends Component{
   render(){
     return(
       <React.Fragment>
-        <Navbar />         
+
+        <Navbar />
+
         <Switch>
           <Route exact path = "/" component = {ProductList} />
           <Route path = "/Details" component = {Details} />
           <Route path = "/Cart" component = {Cart} />
           <Route component = {Default} />
         </Switch>
-        <Footer />         
+
+        <Footer /> 
+                
         <Modal />
 
       </React.Fragment>

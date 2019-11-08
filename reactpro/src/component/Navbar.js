@@ -4,7 +4,7 @@ import logo from '../logo.svg';
 
 import styled from 'styled-components';
 import {ButtonContainer} from './Button';
-import App from '../App.css';
+// import App from '../App.css';
 
 
 export default class Navbar extends Component{
@@ -25,7 +25,7 @@ export default class Navbar extends Component{
 				{/*Products*/}
 				<ul className="navbar-nav align-items-center">
 					<li className="nav-item ml-5">
-						<Link to="/" className="nav-link">
+						<Link to="/" className="nav-link underline">
 							Products
 						</Link>
 					</li>

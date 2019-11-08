@@ -33,7 +33,7 @@ export default class Footer extends Component{
 						<a href="http://google.com" className="footerBullets"><li>Terms & Conditions</li></a>
 						<a href="http://google.com" className="footerBullets"><li>Privacy Policy</li></a>
 					</div>	
-
+					
 					<div className="col-lg-3 mt-4 mb-4">
 						<h5>CONTACT US</h5>
 						<div className="footerBullets">

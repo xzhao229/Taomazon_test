@@ -67,3 +67,37 @@ body{
   font-size: 14px;
   color: var(--mainWhite);
 }
+
+/*decoration of navbar*/
+.underline {
+  text-decoration: none !important;
+  position: relative;
+}
+
+.underline:after,.underline:before {
+  content: '';
+  text-decoration: none;
+  margin-bottom: 5px;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 0%;
+  width: 0%;
+  background: var(--mainWhite);
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+.underline:hover:before {
+  width: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.underline:hover:after {
+  width: 50%;
+  right: 50%;
+  opacity: 1;
+}
+/*end of decoration of navbar*/
