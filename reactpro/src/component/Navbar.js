@@ -4,7 +4,7 @@ import logo from '../logo.svg';
 
 import styled from 'styled-components';
 import {ButtonContainer} from './Button';
-import App from '../App.css';
+// import App from '../App.css';
 
 
 export default class Navbar extends Component{
@@ -17,21 +17,21 @@ export default class Navbar extends Component{
 				Creative Commons (Attribution 3.0 Unported);
 				https://www.iconfinder.com/Makoto_msk */}
 
-			{/*icon*/}
+				{/*icon*/}
 				<Link to='/'>
 				<img src={logo} alt="store" className="navbar-brand" />
 				</Link>
 
-			{/*Products*/}
+				{/*Products*/}
 				<ul className="navbar-nav align-items-center">
 					<li className="nav-item ml-5">
-						<Link to="/" className="nav-link">
+						<Link to="/" className="nav-link underline">
 							Products
 						</Link>
 					</li>
 				</ul>
 
-			{/*Cart*/}
+				{/*Cart*/}
 				<Link to="/Cart" className='ml-auto'>
 					<ButtonContainer>
 						<span className="mr-2">
