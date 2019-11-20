@@ -18,7 +18,8 @@ class ProductProvider extends Component {
 		modalProduct: detailProduct, 
 		cartSubTotal: 0,
 		cartTax: 0,
-		cartTotal: 0
+		cartTotal: 0,
+		logInOpen: false
 	};
 
 	//store values of objects into a new array, instead of using reference of obj
@@ -39,7 +40,7 @@ class ProductProvider extends Component {
 	};
 
 	getItem = (id) => {
-		const product = this.state.products.find(item => item.id === id);
+		const product = this.state.products.find(item => item.id === id); 
 		return product;
 	}
 
@@ -82,6 +83,18 @@ class ProductProvider extends Component {
 	closeModal = () => {
 		this.setState(() => {
 			return {modalOpen: false}
+		})
+	} 
+
+	openLogIn = () => {
+		this.setState(() => {
+			return {logInOpen: true}
+		})
+	}
+
+	closeLogIn = () => {
+		this.setState(() => {
+			return {logInOpen: false}
 		})
 	}
 
@@ -205,7 +218,9 @@ class ProductProvider extends Component {
 				increment: this.increment,
 				decrement: this.decrement,
 				removeItem: this.removeItem,
-				clearCart: this.clearCart
+				clearCart: this.clearCart,
+				openLogIn: this.openLogIn,
+				closeLogIn: this.closeLogIn
 			}}>
 
 				{this.props.children}

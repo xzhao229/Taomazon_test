@@ -5,9 +5,14 @@ import logo from '../logo.svg';
 import styled from 'styled-components';
 import {ButtonContainer} from './Button';
 // import App from '../App.css';
+import { Button, Dropdown, DropdownMenu, DropdownItem, Progress } from 'reactstrap';
+import { ProductConsumer } from '../context';
+
+
 
 
 export default class Navbar extends Component{
+
 	render(){
 		return(
 
@@ -31,8 +36,31 @@ export default class Navbar extends Component{
 					</li>
 				</ul>
 
+				{/*Search bar*/}
+
+				
+				{/*My Account*/}	
+				<ProductConsumer>
+					{value => (
+						<Link to="/Account" 
+						className='ml-auto' 
+						onClick={() => {
+							/*if logged in, directed to account page, if not, ask user to log in*/
+								value.openLogIn();
+							}}
+						>
+							<ButtonContainer>
+								<i className="fa fa-align-justify mx-1"></i> My Account <i className="fa fa-angle-down mx-1"></i>
+									
+							</ButtonContainer>
+						</Link>
+					)}			
+					
+				</ProductConsumer>
+
+
 				{/*Cart*/}
-				<Link to="/Cart" className='ml-auto'>
+				<Link to="/Cart" className='ml-3'>
 					<ButtonContainer>
 						<span className="mr-2">
 							<i className="fas fa-cart-plus" />

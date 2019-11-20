@@ -9,6 +9,10 @@ import Cart from './component/Cart';  //not /Cart/Cart due to package.json
 import Default from './component/Default';
 import Modal from './component/Modal';
 import Footer from './component/Footer';
+import Account from './component/Account';
+import LogIn from './component/LogIn';
+
+
 
 
 class App extends Component{
@@ -21,6 +25,7 @@ class App extends Component{
         <Switch>
           <Route exact path = "/" component = {ProductList} />
           <Route path = "/Details" component = {Details} />
+          <Route path = "/Account" component = {Account} />
           <Route path = "/Cart" component = {Cart} />
           <Route component = {Default} />
         </Switch>
@@ -28,6 +33,7 @@ class App extends Component{
         <Footer /> 
                 
         <Modal />
+        <LogIn />
 
       </React.Fragment>
     );
