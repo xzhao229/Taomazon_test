@@ -25,16 +25,16 @@ export default class LogIn extends Component {
                                     {/*log in form*/}
                                     <form>
                                         <div>
-                                            <span>Username: &nbsp;&nbsp;</span>
+                                            <label for="username">Username: &nbsp;&nbsp;</label>
                                             <input
-                                              type="text" required
+                                              type="text" id="username" required
                                             />
                                         </div>
                                         <br />
                                         <div>
-                                            <span>Password: &nbsp;&nbsp;</span>
+                                            <label for="password">Password: &nbsp;&nbsp;</label>
                                             <input
-                                              type="password" required
+                                              type="password" id="password" required
                                             />
                                         </div>
                                         <br />
