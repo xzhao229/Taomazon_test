@@ -26,49 +26,49 @@ export default class Register extends Component{
 					                    <form method="post" className="cmxform" action="" id="signUpForm">
 
 					                        <div className="form-group row">
-					                            <label for="firstname" className="col-sm-2 form-control-label">First Name:</label>
+					                            <label for="firstname" className="col-sm-2 form-control-label align-self-center">First Name:</label>
 					                            <div className="col-sm-8">
 					                                <input type="text" name="firstname" className="form-control" id="firstname" placeholder="First Name" name="name" minlength="2" required />
 					                            </div>
 					                        </div>
 
 					                        <div className="form-group row">
-					                            <label for="lastname" className="col-sm-2 form-control-label">Last Name:</label>
+					                            <label for="lastname" className="col-sm-2 form-control-label align-self-center">Last Name:</label>
 					                            <div className="col-sm-8">
 					                                <input type="text" name="lastname" className="form-control" id="lastname" placeholder="Last Name" />
 					                            </div>
 					                        </div>
 
 					                        <div className="form-group row">
-					                            <label for="email" className="col-sm-2 form-control-label">Email:</label>
+					                            <label for="email" className="col-sm-2 form-control-label align-self-center">Email:</label>
 					                            <div className="col-sm-8">
 					                                <input type="email" name="email" className="form-control email" id="email" placeholder="Email Address" />
 					                            </div>
 					                        </div>
 
 					                        <div className="form-group row">
-					                            <label for="username" className="col-sm-2 form-control-label">Username:</label>
+					                            <label for="username" className="col-sm-2 form-control-label align-self-center">Username:</label>
 					                            <div className="col-sm-8">
 					                                <input type="text" name="username" className="form-control" id="username" placeholder="Username" />
 					                            </div>
 					                        </div>
 
 					                        <div className="form-group row">
-					                            <label for="password" className="col-sm-2 form-control-label">Password:</label>
+					                            <label for="password" className="col-sm-2 form-control-label align-self-center">Password:</label>
 					                            <div className="col-sm-8">
 					                                <input type="password" name="password" className="form-control" id="password" placeholder="Enter password" />
 					                            </div>
 					                        </div>
 
 					                        <div className="form-group row">
-					                            <label for="confirm_password" className="col-sm-2 form-control-label">Confirm Password:</label>
+					                            <label for="confirm_password" className="col-sm-2 form-control-label align-self-center">Confirm Password:</label>
 					                            <div className="col-sm-8">
 					                                <input type="password" className="form-control" name="confirm_password" id="confirm_password" placeholder="Confirm password" />
 					                            </div>
 					                        </div>
 
 					                        <div className="form-group row">
-					                            <label for="birthdate" className="col-sm-2 form-control-label">BirthDate:</label>
+					                            <label for="birthdate" className="col-sm-2 form-control-label align-self-center">Date of Birth:</label>
 					                            <div className="col-sm-8">
 					                                <input type="date" className="form-control" name="birthdate" id="birthdate" placeholder="Enter Birthdate" required />
 					                            </div>
