@@ -19,31 +19,37 @@ export default class LogIn extends Component {
                             <div className="row">
                                 <div id="modal" 
                                     className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5">
-                                    <h4>Please log in</h4>
+                                    <h4 className="mt-3">Please log in</h4>
                                     <br />
-                                    <div>
-                                        <span>Username: &nbsp;&nbsp;</span>
-                                        <input
-                                          type="text"
-                                        />
-                                    </div>
-                                    <br />
-                                    <div>
-                                        <span>Password: &nbsp;&nbsp;</span>
-                                        <input
-                                          type="password"
-                                        />
-                                    </div>
-                                    <br />
+
+                                    {/*log in form*/}
+                                    <form>
+                                        <div>
+                                            <span>Username: &nbsp;&nbsp;</span>
+                                            <input
+                                              type="text" required
+                                            />
+                                        </div>
+                                        <br />
+                                        <div>
+                                            <span>Password: &nbsp;&nbsp;</span>
+                                            <input
+                                              type="password" required
+                                            />
+                                        </div>
+                                        <br />
+                                        <button class="btn btn-primary" type="submit">Log In</button>
+                                    </form>
+
+                                    {/*redirect to Register*/}
                                     <Link 
-                                        to="/Account" 
+                                        to="/Register"
                                         onClick={() => {closeLogIn();}}
                                     >
-                                        <ButtonContainer>
-                                            Log In
-                                        </ButtonContainer>
+                                        <h6 className="mt-3">
+                                            Register Now
+                                        </h6>
                                     </Link>
-                                    
 
                                 </div>
                             </div>

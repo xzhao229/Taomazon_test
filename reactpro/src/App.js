@@ -11,6 +11,7 @@ import Modal from './component/Modal';
 import Footer from './component/Footer';
 import Account from './component/Account';
 import LogIn from './component/LogIn';
+import Register from './component/Register';
 
 
 
@@ -26,6 +27,7 @@ class App extends Component{
           <Route exact path = "/" component = {ProductList} />
           <Route path = "/Details" component = {Details} />
           <Route path = "/Account" component = {Account} />
+          <Route path = "/Register" component = {Register} />
           <Route path = "/Cart" component = {Cart} />
           <Route component = {Default} />
         </Switch>
